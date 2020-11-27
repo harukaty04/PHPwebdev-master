@@ -2,10 +2,10 @@
 
 require('../app/functions.php');
 
-$colors = filter_input(INPUT_GET, 'color');
-// $color =isset($coloe ? $color : 'None selecter';
-$color =$color ?? 'None selected';
-$colors = filter_input()
+// $colors = filter_input(INPUT_GET, 'color');
+// // $color =isset($coloe ? $color : 'None selecter';
+// $color =$color ?? 'None selected';
+$colors = filter_input(INPUT_GET, 'color') ?? 'transparent';
 
 include('../app/_parts/_header.php');
 
