@@ -2,8 +2,10 @@
 
 require('../app/functions.php');
 
-$colors = filter_input(INPUT_GET, 'colors', FILTER_DEFAULT, FILTER_REQUIRE_ARRAY);//GET形式で渡ってきたcolorを取得
-$colors = empty($colors) ? 'None selected' : implode('.', $colors);
+$colors = filter_input(INPUT_GET, 'color');
+// $color =isset($coloe ? $color : 'None selecter';
+$color =$color ?? 'None selected';
+$colors = filter_input()
 
 include('../app/_parts/_header.php');
 
