@@ -8,8 +8,9 @@ $message = $message !== '' ? $message : '...';
 include('../app/_parts/_header.php');
 
 ?>
+
 <p><?= h($message); ?></p>
-<><a href="index.php">Go back</a></>
+<p><a href="index.php">Go back</a></p>
 
 
 
